@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Unbounded:wght@800&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-color: #5000ca;
+}
+
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu {
+    box-shadow: 0 2px 6px #181823;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.menu ul{
+    padding-right: 30px;
+    float: right;
+}
+  
+.menu ul li{
+    list-style: none;
+    float: left;
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-top: -7px;
+    border-radius: 10px;
+}
+
+.menu ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding-right: 0;
+    margin: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.menu ul ul li{
+    display: block;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+}
+
+.menu ul li:hover > a{
+    color: #FFB100;
+    transform: scale(0.9);
+}
+
+.teknik {
+    float: left;
+    position: fixed;
+    z-index: 2;
+}
+
+.teknik ul{
+    list-style-type: none;
+    overflow: hidden;
+    padding: 3px 0px 0px 30px;
+    position: relative;
+}
+
+.teknik ul li{
+    margin: -45px 0px 20px 45px;
+}
+
+.teknik ul li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.teknik ul li:hover{
+    transform: scale(0.9);
+}
+
+.welcome h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-top: 18%;
+    line-height: 70px;
+    font-size: 50px;
+    float: right;
+    text-align: end;
+    margin-right: 30px;
+}
+
+.welcome img{
+    margin-top: 180px;
+}
+/* Navbar */
+
+/* Profile */
+#profile{
+    color: black;
+}
+
+.utama h2{
+    text-align: center;
+    padding: 50px;
+    line-height: 35px; 
+}
+
+.second{
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+
+.second p{
+    width: 95%;
+    margin: 20px;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.box-profile{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-profile{
+    margin: 20px;
+    padding : 20px 40px 30px 40px;
+    height: 420px;
+    width: 350px;
+    text-align: center;
+    background-color: white;
+    border: 5px solid #635985;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.card-profile:hover {
+    transform: translateY(-10px);
+    border-color: #5000ca;
+}
+
+.card-profile i{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    color: #400E32;
+    margin-bottom: 20px;
+}
+
+.card-profile h4{
+    margin: 20px;
+    color: #400E32;
+}
+
+.card-profile img{
+    height: 200px;
+    width: 200px;
+}
+
+.card-profile button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-profile button {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid;
+    background: linear-gradient(#397ff0, #5000ca);
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+  
+.card-profile button:hover {
+    transform:scale(0.9);
+}
+/* Profile */
+
+/* Fasilitas Lab */
+.labkom{
+    background-color: #5000ca;
+    color: white;
+}
+
+.labkom h2{
+    margin-top: -5px;
+    margin-bottom: -30px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.labcontent{
+    display: flex;
+    margin: auto;
+}
+
+.labcontent img{
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    align-content: center;
+}
+
+.labcontent p{
+    margin: auto;
+    padding-right: 7%;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.labcontent button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.labcontent button {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 12px 18px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid;
+    background: linear-gradient(#397ff0, #5000ca);
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+  
+.labcontent button:hover {
+    transform:scale(0.9);
+}
+/* Fasilitas Lab */
+
+/* Fasilitas UKM */
+.content{
+    background-color: #5000ca;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.content h2{
+    text-align: center;
+    padding-bottom: 80px;
+    line-height: 35px;  
+}
+
+.box{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 470px;
+    width: 400px;
+    border-radius: 50px;
+    background-color: white;
+    border: 5px solid #635985;
+    text-align: center;
+    margin: 20px;
+    padding : 20px 70px 50px 70px;
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: #5000ca;
+}
+
+.card i{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    color: #400E32;
+    margin-bottom: 20px;
+}
+
+.card h4{
+    margin: 20px;
+    color: #400E32;
+}
+
+.card img{
+    height: 250px;
+    width: 250px;
+}
+
+.card button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.card button {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid;
+    background: linear-gradient(#397ff0, #5000ca);
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+  
+.card button:hover {
+    transform:scale(0.9);
+}
+/* Fasilitas UKM */
+
+/* Program Kerja */
+.box-proker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-proker .jud{
+    text-align: center;
+    margin: 20px;
+}
+
+.jud h4{
+    margin: 20px;
+}
+
+.card-proker{
+    margin: auto;
+    padding : 20px 40px 30px 40px;
+    height: 220px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 5px solid #635985;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.card-proker:hover {
+    transform: translateY(-10px);
+    border-color: #5000ca;
+}
+
+.card-proker img{
+    margin: auto;
+    display: block;
+    text-align: center;
+    height: 120px;
+    width: 120px;
+}
+/* Program Kerja */
+
+/* Footer */
+.footer{
+    background-color: #5000ca;
+    position: relative;
+    margin-top: -50px;
+    text-align: center;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.sosial{
+    color: white;
+    padding: 15px;
+}
+
+.sosial i{
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.sosial i:hover{
+    background-color: #181823;
+    border-radius: 5px;
+    transform:scale(1.2);
+}
+
+.footer .end{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+/* Footer */
